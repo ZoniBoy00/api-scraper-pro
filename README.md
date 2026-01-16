@@ -189,10 +189,6 @@ pip install -r requirements.txt
 python test_installation.py
 ```
 
-### Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -211,8 +207,6 @@ Users are responsible for ensuring proper authorization before scraping any webs
 
 - 📖 [Documentation](README.md)
 - 🚀 [Quick Start Guide](QUICKSTART.md)
-- 🐛 [Report Issues](https://github.com/yourusername/api-scraper-pro/issues)
-- 💬 [Discussions](https://github.com/yourusername/api-scraper-pro/discussions)
 
 ## 🌟 Star History
 
@@ -226,9 +220,5 @@ If you find this project useful, please consider giving it a star! ⭐
 - **SQLite** - Data storage
 - **Plotly** - Data visualization
 - **AsyncIO** - Concurrent operations
-
-## 🏆 Credits
-
-Created with ❤️ by the API Scraper Pro team
 
 ---
