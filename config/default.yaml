@@ -1,0 +1,73 @@
+scraping:
+  max_depth: 3
+  timeout: 30000
+  headless: true
+  page_delay: 2000
+  max_concurrent: 5
+  rotate_user_agent: true
+stealth:
+  enabled: true
+  mouse_movements: true
+  human_delays: true
+  webgl_spoofing: true
+  canvas_protection: true
+proxy:
+  enabled: false
+  rotation: true
+  providers: []
+  timeout: 10
+database:
+  path: data/scraper.db
+  auto_backup: true
+  backup_dir: data/backups
+  max_backups: 5
+api_detection:
+  enabled: true
+  content_types:
+  - application/json
+  - application/ld+json
+  - application/hal+json
+  - application/vnd.api+json
+  min_json_size: 50
+  ignore_patterns:
+  - .*\.css
+  - .*\.js
+  - .*\.png
+  - .*\.jpg
+  - .*\.gif
+  - .*\.woff
+  - .*analytics.*
+  - .*tracking.*
+export:
+  formats:
+  - json
+  - csv
+  auto_export: false
+  output_dir: exports
+logging:
+  level: INFO
+  file: logs/scraper.log
+  max_size: 10
+  backup_count: 5
+  colorize: true
+rate_limiting:
+  enabled: true
+  max_rps: 2
+  adaptive_backoff: true
+  min_backoff: 1
+  max_backoff: 60
+webhook:
+  enabled: false
+  url: ''
+  events:
+  - scrape_complete
+  - error
+  - rate_limit
+compliance:
+  respect_robots_txt: true
+  anonymize_pii: true
+  pii_fields:
+  - email
+  - phone
+  - ssn
+  - credit_card
